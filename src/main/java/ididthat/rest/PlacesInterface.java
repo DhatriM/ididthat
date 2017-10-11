@@ -14,7 +14,6 @@ import ididthat.exceptions.APPInternalServerException;
 import ididthat.exceptions.APPNotFoundException;
 import ididthat.helpers.PATCH;
 import ididthat.models.Place;
-import ididthat.models.User;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 import org.json.JSONException;
