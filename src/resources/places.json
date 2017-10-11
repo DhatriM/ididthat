@@ -1,0 +1,10 @@
+{
+  "id" : "156",
+  "PlaceName" : "Place1",
+  "PlaceLat" : 37.4,
+  "PlaceLong" : -122.0,
+  "PlaceCategoryType" : "Restaurant",
+  "numberCheckins" : 0,
+  "avgRating" : 2.5,
+  "latestRankingbyCategory" : 1
+}
