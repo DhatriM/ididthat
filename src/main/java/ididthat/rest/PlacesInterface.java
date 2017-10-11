@@ -28,13 +28,13 @@ import java.util.ArrayList;
 public class PlacesInterface {
 
     private MongoCollection<Document> collection = null;
-    //private MongoDatabase database;
+    private MongoDatabase database;
     private ObjectWriter ow;
 
     public PlacesInterface() {
         MongoClient mongoClient = new MongoClient();
-        //database = mongoClient.getDatabase("app17-5");
-        //collection = database.getCollection("users");
+        database = mongoClient.getDatabase("ididthatdb");
+        collection = database.getCollection("places");
         ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
     }
 

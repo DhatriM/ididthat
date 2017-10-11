@@ -1,4 +1,4 @@
-db = connect("localhost:8080/ididthat");
+db = connect("localhost:8080/ididthatdb");
 coll = db.places;
 coll.insert({   "id" : "156",
     "PlaceName" : "Place1",

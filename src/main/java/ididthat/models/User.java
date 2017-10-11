@@ -5,6 +5,8 @@ public class User {
     String id = null;
     String userName, email, placeID, checkinID, ratingID;
 
+    //placeID, ratingID, checkinID to be an array
+
     public User(String userName, String email, String placeID, String checkinID,
                 String ratingID) {
         this.email = email;

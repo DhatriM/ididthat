@@ -13,7 +13,6 @@ import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 import com.mongodb.client.result.DeleteResult;
 import ididthat.models.User;
-import ididthat.models.User;
 import org.bson.Document;
 import org.bson.types.ObjectId;
 import org.json.JSONException;
@@ -30,13 +29,13 @@ import org.json.JSONObject;
 public class UserInterface {
 
     private MongoCollection<Document> collection = null;
-    //private MongoDatabase database;
+    private MongoDatabase database;
     private ObjectWriter ow;
 
     public UserInterface() {
         MongoClient mongoClient = new MongoClient();
-        //database = mongoClient.getDatabase("app17-5");
-        //collection = database.getCollection("users");
+        database = mongoClient.getDatabase("ididthatdb");
+        collection = database.getCollection("user");
         ow = new ObjectMapper().writer().withDefaultPrettyPrinter();
     }
 

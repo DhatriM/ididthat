@@ -1,4 +1,4 @@
-db = connect("localhost:8080/ididthat");
+db = connect("localhost:8080/ididthatdb");
 coll = db.users;
 coll.insert({    "userName" : "foodie123",
     "email" : "sample@example.com",
