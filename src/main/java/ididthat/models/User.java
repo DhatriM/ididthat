@@ -3,11 +3,10 @@ package ididthat.models;
 public class User {
 
     String id = null;
-    String userName, email;
-    int placeID, checkinID, ratingID;
+    String userName, email, placeID, checkinID, ratingID;
 
-    public User(String userName, String email, int placeID, int checkinID,
-                int ratingID) {
+    public User(String userName, String email, String placeID, String checkinID,
+                String ratingID) {
         this.email = email;
         this.userName = userName;
         this.placeID = placeID;

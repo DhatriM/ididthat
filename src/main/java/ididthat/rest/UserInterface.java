@@ -57,9 +57,9 @@ public class UserInterface {
                 User user = new User(
                         userName,
                         item.getString("email"),
-                        item.getInteger("placeID"),
-                        item.getInteger("checkinID"),
-                        item.getInteger("ratingID")
+                        item.getString("placeID"),
+                        item.getString("checkinID"),
+                        item.getString("ratingID")
                 );
                 user.setId(item.getObjectId("_id").toString());
                 userList.add(user);
@@ -92,9 +92,9 @@ public class UserInterface {
             User user = new User(
                     item.getString("userName"),
                     item.getString("email"),
-                    item.getInteger("placeID"),
-                    item.getInteger("checkinID"),
-                    item.getInteger("ratingID")
+                    item.getString("placeID"),
+                    item.getString("checkinID"),
+                    item.getString("ratingID")
             );
             user.setId(item.getObjectId("_id").toString());
             return user;
